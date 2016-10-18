@@ -154,19 +154,19 @@ can take over 15 minutes to complete.
    ```none
    root@a8b2885ab900:/go/src/github.com/docker/docker# hack/make.sh binary
    ...output snipped...
-   bundles/1.12.0-dev already exists. Removing.
+   bundles/1.13.0-dev already exists. Removing.
 
-   ---> Making bundle: binary (in bundles/1.12.0-dev/binary)
-   Building: bundles/1.12.0-dev/binary/docker-1.12.0-dev
-   Created binary: bundles/1.12.0-dev/binary/docker-1.12.0-dev
-   Copying nested executables into bundles/1.12.0-dev/binary
+   ---> Making bundle: binary (in bundles/1.13.0-dev/binary)
+   Building: bundles/1.13.0-dev/binary/docker-1.13.0-dev
+   Created binary: bundles/1.13.0-dev/binary/docker-1.13.0-dev
+   Copying nested executables into bundles/1.13.0-dev/binary
    ```
 
 7. Copy the binary to the container's `/usr/bin` directory.
 
    ```none
-   root@a8b2885ab900:/go/src/github.com/docker/docker# cp bundles/1.12.0-dev/binary-client/docker* /usr/bin
-   root@a8b2885ab900:/go/src/github.com/docker/docker# cp bundles/1.12.0-dev/binary-daemon/docker* /usr/bin
+   root@a8b2885ab900:/go/src/github.com/docker/docker# cp bundles/1.13.0-dev/binary-client/docker* /usr/bin
+   root@a8b2885ab900:/go/src/github.com/docker/docker# cp bundles/1.13.0-dev/binary-daemon/docker* /usr/bin
    ```
 
 8. Start the Engine daemon running in the background.
@@ -189,7 +189,7 @@ can take over 15 minutes to complete.
 
    ```none
    root@5f8630b873fe:/go/src/github.com/docker/docker# docker --version
-   Docker version 1.12.0-dev, build 6e728fb
+   Docker version 1.13.0-dev, build 6e728fb
    ```
 
    Inside the container you are running a development version. This is the version
